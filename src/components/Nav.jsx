@@ -19,7 +19,7 @@ export default function Nav() {
     >
       <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
         <span className="text-sm font-semibold tracking-widest text-white/60 uppercase">
-          FY
+          FormYoung
         </span>
         <ul className="flex gap-8">
           {links.map((link) => (
