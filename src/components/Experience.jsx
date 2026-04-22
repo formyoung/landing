@@ -157,22 +157,6 @@ export default function Experience() {
           </div>
         </div>
 
-        {/* Education */}
-        <div className="mt-16 p-8 rounded-3xl border border-white/6 bg-white/2">
-          <p className="text-xs text-violet-400 tracking-widest uppercase mb-6 font-medium">Education</p>
-          <div className="flex items-center gap-5">
-            <div className="text-3xl">🎓</div>
-            <div>
-              <h3 className="text-base font-bold mb-1">경희대학교 (Kyung Hee University)</h3>
-              <p className="text-sm text-white/40">학사 (Bachelor's Degree) · Mar 2018 — Aug 2022 · Seoul, South Korea</p>
-              <div className="flex gap-2 mt-3">
-                <span className="tag">Korean Native</span>
-                <span className="tag">English Fluent</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
   )
