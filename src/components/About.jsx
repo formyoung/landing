@@ -42,7 +42,7 @@ export default function About() {
             </h2>
           </div>
           <p className="text-white/40 text-sm max-w-xs leading-relaxed md:text-right">
-            경희대학교 졸업 · 서울 기반 · Web3 생태계 최전선에서 커뮤니티와 기술을 연결하는 빌더
+            서울 기반 · Web3 생태계 최전선에서 커뮤니티와 기술을 연결하는 빌더
           </p>
         </div>
 
@@ -62,7 +62,6 @@ export default function About() {
                 <p className="text-sm text-white/40">@Form_young · @75minjae · TG: @formyoung</p>
                 <div className="flex items-center gap-2 mt-2">
                   <span className="tag">Seoul, Korea</span>
-                  <span className="tag">경희대학교</span>
                   <span className="tag">KO / EN</span>
                 </div>
               </div>
