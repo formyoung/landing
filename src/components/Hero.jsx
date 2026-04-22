@@ -49,7 +49,7 @@ export default function Hero() {
 
             {/* Tags */}
             <div className="flex flex-wrap gap-2 mb-12">
-              {['The Sandbox Alumni', 'Web3', 'NFT', 'GameFi', 'Community', 'Toronto 🇨🇦'].map(t => (
+              {['WLFI KR Lead', 'The Sandbox Alumni', 'Human Validator', 'Web3', 'NFT', 'Seoul 🇰🇷'].map(t => (
                 <span key={t} className="tag">{t}</span>
               ))}
             </div>
@@ -126,8 +126,8 @@ export default function Hero() {
                 <div className="flex items-center gap-2.5">
                   <span className="text-lg">📍</span>
                   <div>
-                    <div className="text-xs font-semibold text-white">Toronto</div>
-                    <div className="text-[10px] text-white/40">Canada 🇨🇦</div>
+                    <div className="text-xs font-semibold text-white">Seoul</div>
+                    <div className="text-[10px] text-white/40">Korea 🇰🇷</div>
                   </div>
                 </div>
               </div>
