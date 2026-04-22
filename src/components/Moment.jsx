@@ -27,41 +27,40 @@ export default function Moment() {
 
           <div className="relative z-10 grid lg:grid-cols-2 gap-0">
 
-            {/* Left — Visual */}
-            <div className="p-10 md:p-16 flex flex-col justify-center items-center border-b lg:border-b-0 lg:border-r border-white/6">
-              {/* Sign recreation */}
-              <div className="relative mb-8">
-                <div className="absolute -inset-4 bg-amber-500/5 rounded-3xl blur-xl" />
-                <div className="relative bg-white text-black w-72 md:w-80 rounded-2xl p-8 shadow-2xl rotate-[-1deg] hover:rotate-0 transition-transform duration-500">
-                  {/* Tape */}
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-16 h-5 bg-amber-200/80 rounded-sm rotate-[-2deg]" />
+            {/* Left — Real Photo */}
+            <div className="relative border-b lg:border-b-0 lg:border-r border-white/6 overflow-hidden" style={{ minHeight: '480px' }}>
+              <img
+                src="/sign-photo.png"
+                alt="Form Young holding AI-paid sign in Toronto"
+                className="w-full h-full object-cover object-center"
+                style={{ minHeight: '480px' }}
+              />
+              {/* Gradient overlay at bottom */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#080808]/80 via-transparent to-transparent" />
 
-                  <div className="text-center">
-                    <p className="text-xs text-black/40 tracking-widest uppercase mb-3 font-medium">Notice</p>
-                    <p className="text-xl md:text-2xl font-black tracking-tight leading-tight mb-3 uppercase">
-                      AN AI PAID ME TO HOLD THIS SIGN
-                    </p>
-                    <div className="h-px bg-black/10 my-3" />
-                    <p className="text-xs text-black/40 font-mono">(Pride not included.)</p>
-                    <div className="mt-4 flex items-center justify-center gap-2">
-                      <span className="text-xs text-black/30">Powered by</span>
-                      <span className="text-xs font-bold text-black/60">RentAHuman.ai</span>
-                    </div>
+              {/* Caption badge */}
+              <div className="absolute bottom-6 left-6 right-6">
+                <div className="flex items-center gap-3 bg-black/60 backdrop-blur-md border border-white/10 rounded-2xl px-4 py-3">
+                  <img
+                    src="https://unavatar.io/twitter/Form_young"
+                    alt="Form Young"
+                    className="w-8 h-8 rounded-full ring-1 ring-amber-500/40 shrink-0"
+                    onError={(e) => { e.target.style.display='none' }}
+                  />
+                  <div>
+                    <p className="text-xs font-semibold text-amber-300">@Form_young</p>
+                    <p className="text-[10px] text-white/40">Toronto, Canada · Feb 2026</p>
                   </div>
-                </div>
-              </div>
-
-              {/* Person avatar */}
-              <div className="flex items-center gap-3">
-                <img
-                  src="https://unavatar.io/twitter/Form_young"
-                  alt="Form Young"
-                  className="w-10 h-10 rounded-full ring-2 ring-amber-500/30"
-                  onError={(e) => { e.target.style.display='none' }}
-                />
-                <div>
-                  <p className="text-sm font-semibold text-amber-300">@Form_young</p>
-                  <p className="text-xs text-white/30">Toronto, Canada · Feb 2026</p>
+                  <a
+                    href="https://x.com/Form_young/status/2019203848611782792"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-auto"
+                  >
+                    <svg className="w-4 h-4 text-white/30 hover:text-white/70 transition-colors" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.743l7.736-8.859L1.254 2.25H8.08l4.253 5.622 5.912-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
