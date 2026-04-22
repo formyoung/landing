@@ -50,12 +50,9 @@ export default function About() {
           <div className="lg:col-span-2 p-10 rounded-3xl border border-white/6 bg-gradient-to-br from-white/3 to-transparent card-hover">
             <div className="flex items-start gap-5 mb-8">
               <img
-                src="https://unavatar.io/twitter/Form_young"
+                src="/profile.png"
                 alt="Form Young"
-                className="w-16 h-16 rounded-2xl ring-1 ring-white/10 shrink-0"
-                onError={(e) => {
-                  e.target.outerHTML = `<div style="width:64px;height:64px;border-radius:16px;background:linear-gradient(135deg,#1e1b4b,#0f172a);display:flex;align-items:center;justify-content:center;flex-shrink:0"><span style="font-size:24px;font-weight:900;background:linear-gradient(135deg,#c4b5fd,#818cf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent">FY</span></div>`
-                }}
+                className="w-16 h-16 rounded-2xl ring-1 ring-white/10 shrink-0 object-cover object-top"
               />
               <div>
                 <h3 className="text-xl font-bold mb-1">강민재 · Minjae Kang</h3>

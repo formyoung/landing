@@ -106,16 +106,9 @@ export default function Hero() {
               {/* Photo */}
               <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden ring-1 ring-white/10">
                 <img
-                  src="https://unavatar.io/twitter/Form_young"
+                  src="/profile.png"
                   alt="Form Young"
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.target.parentElement.innerHTML = `
-                      <div style="width:100%;height:100%;background:linear-gradient(135deg,#1e1b4b,#0f172a);display:flex;align-items:center;justify-content:center;">
-                        <span style="font-size:80px;font-weight:900;background:linear-gradient(135deg,#c4b5fd,#818cf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent">FY</span>
-                      </div>
-                    `
-                  }}
+                  className="w-full h-full object-cover object-top"
                 />
                 {/* Overlay gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#080808]/30 via-transparent to-transparent" />
